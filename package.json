@@ -1,0 +1,11 @@
+{
+  "name": "nerdbord-js-weekly-challenge",
+  "version": "1.0.0",
+  "description": "Nerdbord JS weekly challenges are structured as monorepo. Each challenge is a separate package, so you are free to choose which one you want to solve.",
+  "author": "Nerdbord",
+  "license": "ISC",
+  "private": true,
+  "workspaces": [
+    "challenges/*"
+  ]
+}
