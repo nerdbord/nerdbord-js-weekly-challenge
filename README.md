@@ -42,4 +42,4 @@ After following these steps, your forked repository should be up-to-date with th
 
 We welcome contributions to the Nerdbord JS Weekly Challenges! If you have a challenge idea or would like to contribute a solution to an existing challenge, please submit a pull request with your changes.
 
-   
+   https://aniapiwo.github.io/nerdbord-js-weekly-challenge/
