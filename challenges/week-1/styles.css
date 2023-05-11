@@ -1,0 +1,34 @@
+body {
+    background: #2A2A2A;
+}
+
+.rectangle{
+    position: absolute;
+    width: 50%;
+    height: 520px;
+    left: calc(50% - 530px);
+    top: 100px;
+    
+    background: #2A2A2A;
+    box-shadow: 4px 4px 64px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+
+.universe{
+    position: absolute;
+    height: 42px;
+    left: calc(50% - 200px);
+    top: 528px;
+    
+    font-family: 'Inter';
+    font-size: 24px;
+    /*font-style: normal;
+    /*font-weight: 400;
+    /*line-height: 32px;
+    /* or 133% */
+    
+    
+    color: #FFFFFF;
+}
+
