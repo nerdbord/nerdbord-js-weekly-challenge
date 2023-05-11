@@ -1,8 +1,3 @@
-//import svg1 from './assets/1.svg'
-//import svg2 from './assets/2.svg'
-//import svg3 from './assets/3.svg'
-//import svg4 from './assets/4.svg'
-
 function runScript(){
     let box = document.getElementById("box");
 
