@@ -1,27 +1,30 @@
 body {
     background: #2A2A2A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .rectangle{
     position: absolute;
-    width: 50%;
-    height: 520px;
-    left: calc(50% - 530px);
+    width: 75%;
+    height: 75%;
     top: 100px;
     
     background: #2A2A2A;
     box-shadow: 4px 4px 64px 10px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 .universe{
     position: absolute;
-    height: 42px;
-    left: calc(50% - 200px);
-    top: 528px;
-    
-    font-family: 'Inter';
+    bottom: 50px;
+    font-family: 'Inter', sans-serif;
     font-size: 24px;
     /*font-style: normal;
     /*font-weight: 400;
