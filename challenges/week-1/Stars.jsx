@@ -7,7 +7,6 @@ export const Stars = ({ rows, columns }) => {
 
   useEffect(() => {
     const starElements = document.querySelectorAll(`.${css.star}`);
-    /* const unityElements = document.querySelectorAll(`.${css.unity}`); */
     let startTime = Date.now();
     
     starElements.forEach((starElement, index) => {
@@ -17,13 +16,7 @@ export const Stars = ({ rows, columns }) => {
   
       starElement.style.animationDelay = `${randomDelay}s`;
     });
-/* 
-    unityElements.forEach((unityElement, index) => {
-        const randomDelay = Math.random() * 1
-    
-        unityElement.style.animationDelay = `${randomDelay}s`;
-      }); */
-  }, []);
+
   
 
   return (
