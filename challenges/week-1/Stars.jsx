@@ -16,8 +16,7 @@ export const Stars = ({ rows, columns }) => {
   
       starElement.style.animationDelay = `${randomDelay}s`;
     });
-
-  
+  }, []);
 
   return (
     <div className={css.starsBox}>
@@ -43,5 +42,4 @@ export const Stars = ({ rows, columns }) => {
     </div>
   );
 };
-
 
