@@ -1,6 +1,6 @@
 const canvas = document.getElementById("myCanvas");
 const ctx = canvas.getContext("2d");
-canvas.width = window.innerWidth*1.1;
+canvas.width = window.innerWidth*1.3;
 // Load the image
 const image = new Image();
 image.src = "assets/tape.svg";
@@ -31,5 +31,4 @@ function animate() {
     requestAnimationFrame(animate);
   }
 
-  
 image.onload = animate;
