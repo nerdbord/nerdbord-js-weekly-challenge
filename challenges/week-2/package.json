@@ -3,5 +3,6 @@
   "version": "1.0.0",
   "description": "Moving news ticker",
   "author": "Nerdbord",
-  "license": "ISC"
+  "license": "ISC",
+  "type": "module"
 }
