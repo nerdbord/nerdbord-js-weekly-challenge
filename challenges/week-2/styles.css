@@ -1,0 +1,44 @@
+body {
+    background: #05077D;
+    height: 90vh;
+    display: flex;
+    margin: 0;
+    overflow: hidden;
+}
+.animation {
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 103px;
+    background-color: #75FB8E;
+    transform: rotate(-8.32deg);
+    margin-top: 50vh;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.animation span {
+    font-family: Impact, serif;
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 63px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    text-transform: uppercase;
+    background: #75FB8E;
+    color: #05077D;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 20px 5px;
+    animation: move 20s linear infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
