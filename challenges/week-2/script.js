@@ -1,12 +1,10 @@
-// Get the canvas element and its 2D context
 const canvas = document.getElementById("myCanvas");
 const ctx = canvas.getContext("2d");
-
+canvas.width = window.innerWidth*1.1;
 // Load the image
 const image = new Image();
 image.src = "assets/tape.svg";
 
-// Set initial position and speed
 let x = -30;  // Starting position from the right side of the canvas
 let y = 0;            // Vertical position (you can adjust this as needed)
 const speed = 5;      // Speed at which the image moves (you can adjust this as needed)
@@ -32,7 +30,6 @@ function animate() {
     // Request the next animation frame
     requestAnimationFrame(animate);
   }
-  
 
-// Start the animation
+  
 image.onload = animate;
