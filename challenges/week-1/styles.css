@@ -1,0 +1,44 @@
+body {
+    background: #2A2A2A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rectangle{
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    top: 100px;
+    
+    background: #2A2A2A;
+    box-shadow: 4px 4px 64px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.universe{
+    position: absolute;
+    bottom: 50px;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    
+    color: #FFFFFF;
+}
+
+.svg-grid {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 30px;
+}
+
+.svg-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
