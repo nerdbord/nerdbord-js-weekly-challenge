@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #05077d;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 103px;
+  white-space: nowrap;
+  transform: rotate(-20deg);
+  margin-top: 25rem;
+  margin-left: -10rem;
+}
+
+.marquee-image {
+  display: inline-block;
+  vertical-align: top;
+  animation: marquee 20s linear infinite;
+}
+.marquee-image:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(-150%);
+  }
+}
