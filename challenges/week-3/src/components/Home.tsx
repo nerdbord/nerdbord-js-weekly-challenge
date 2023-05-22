@@ -1,34 +1,36 @@
-"use client"
+'use client'
 
-import { useState  } from 'react';
-import Modal         from './Modal';
+import { useState } from 'react'
+import Modal        from './Modal'
 
 const Home = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false)
 
   const openModal = () => {
-    setIsModalOpen(true);
-  };
+    setIsModalOpen(true)
+  }
 
   const closeModal = () => {
-    setIsModalOpen(false);
-  };
+    setIsModalOpen(false)
+  }
 
   return (
     <div className="flex flex-col justify-center items-center h-screen">
-
-      <article className="py-6 px-12">Pop me up like one of your bubble wraps.</article>
+      <article className="py-6 px-12 text-center">
+        <p>Pop me up like one of your</p>
+        <p>bubble wraps.</p>
+      </article>
       <button
-        className="bg-blue-800 hover:bg-blue-200 text-white font-bold py-2 px-4 rounded"
+        className="bg-purple-500 hover:bg-purple-200 text-white font-bold py-2 px-4 rounded-full"
         onClick={openModal}
       >
-        POP IT!
+        <p className="text-center py-2 px-4">POP IT!</p>
       </button>
-      {isModalOpen && <Modal closeModal={closeModal} />}
+      {isModalOpen && <Modal closeModal={closeModal}/>}
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
 
 
