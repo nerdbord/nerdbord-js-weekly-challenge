@@ -3,5 +3,28 @@
   "version": "1.0.0",
   "description": "Interactive page with star effect",
   "author": "Nerdbord",
-  "license": "ISC"
+  "license": "ISC",
+    "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+
+  "dependencies": {
+    "next": "^13.4.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "20.2.1",
+    "@types/react": "18.2.6"
+
+  "devDependencies": {
+    "@types/node": "20.2.1",
+    "@types/react": "18.2.6",
+    "typescript": "5.0.4"
+
+  }
 }
