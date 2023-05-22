@@ -7,9 +7,13 @@ function App() {
 	const [isClicked, setIsClicked] = useState(false);
 
 	return (
-		<section className='modal--container'>
+		<section
+			className={
+				isClicked ? 'modal--container modal--background' : 'modal--container '
+			}
+		>
 			{isClicked ? (
-				<Modal setIsClicked={setIsClicked} />
+				<Modal isClicked={isClicked} setIsClicked={setIsClicked} />
 			) : (
 				<InitialDisplay setIsClicked={setIsClicked} />
 			)}

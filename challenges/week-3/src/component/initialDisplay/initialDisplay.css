@@ -1,0 +1,32 @@
+.initial-text--container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	max-width: 340px;
+	height: auto;
+	padding: 55px;
+}
+.initial--text {
+	color: var(--fontColor);
+	font-size: 14px;
+	font-weight: 500;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.initial--button {
+	background-color: var(--purple);
+	border: none;
+	border-radius: 40px;
+	color: var(--lightPurple);
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 500;
+	padding: 10px 30px;
+	text-transform: uppercase;
+	transition: background-color 0.3s, color 0.3s;
+}
+.initial--button:hover {
+	background-color: var(--lightPurple);
+	color: var(--purple);
+}

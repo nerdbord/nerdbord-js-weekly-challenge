@@ -1,4 +1,8 @@
 interface ModalProps {
+    isClicked: boolean;
 	setIsClicked: (isClicked: boolean) => void;
 }
-export type { ModalProps };
+interface InitialProps {
+	setIsClicked: (isClicked: boolean) => void;
+}
+export type { InitialProps, ModalProps };

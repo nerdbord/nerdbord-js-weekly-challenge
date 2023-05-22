@@ -1,15 +1,15 @@
 import { ModalProps } from '../../types/types';
+import './modal.css';
 
-const Modal = ({ setIsClicked }: ModalProps) => {
+const Modal = ({ isClicked, setIsClicked }: ModalProps) => {
 	const handleCloseModal = () => {
 		setIsClicked(false);
 	};
 	return (
-		<div className='modal'>
-			<p className='modal--text'>
-				Wow, bouncy! Now, let’s wrap it up and close me back.
-			</p>
-			<button onClick={handleCloseModal} className='modal-button'>
+		<div className='modal modal--animation'>
+			<p className='modal--text'>Wow, bouncy!</p>
+			<p className='modal--text'>Now, let’s wrap it up and close me back.</p>
+			<button onClick={handleCloseModal} className='modal--button'>
 				Let’s close
 			</button>
 		</div>

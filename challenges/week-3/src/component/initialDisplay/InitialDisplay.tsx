@@ -1,6 +1,6 @@
-import { ModalProps } from '../../types/types';
-
-const InitialDisplay = ({ setIsClicked }: ModalProps) => {
+import { InitialProps } from '../../types/types';
+import './initialDisplay.css'
+const InitialDisplay = ({ setIsClicked }: InitialProps) => {
 	const handleOpenModal = () => {
 		setIsClicked(true);
 	};
