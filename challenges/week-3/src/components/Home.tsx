@@ -15,9 +15,11 @@ const Home = () => {
   };
 
   return (
-    <div className="flex justify-center items-center h-screen">
+    <div className="flex flex-col justify-center items-center h-screen">
+
+      <article className="py-6 px-12">Pop me up like one of your bubble wraps.</article>
       <button
-        className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+        className="bg-blue-800 hover:bg-blue-200 text-white font-bold py-2 px-4 rounded"
         onClick={openModal}
       >
         POP IT!
