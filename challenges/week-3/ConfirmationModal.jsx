@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import css from "./ConfirmationModal.module.css";
+//import css from "./ConfirmationModal.module.css";
 
 export const ConfirmationModal = () => {
   const [isModalOpen, setModalOpen] = useState(false);
