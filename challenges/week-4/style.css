@@ -64,16 +64,25 @@ body {
 .card__title {
     position: absolute;
     opacity: 0;
-    top: -100px;
     padding: .5em 1em;
     color: #FAFAFA;
     font-size: 2rem;
     font-family: 'Kristi', cursive;
     letter-spacing: 2px;
-    transition: transform 1000ms, opacity 750ms;
 }
 
 .card:hover > .card__title {
-    transform: translateY(100px);
-    opacity: 1;
+    animation: titleAnimation 1s forwards;
+}
+
+@keyframes titleAnimation {
+    0% {
+        opacity: 0;
+        top: -100px;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0;
+    }
 }
