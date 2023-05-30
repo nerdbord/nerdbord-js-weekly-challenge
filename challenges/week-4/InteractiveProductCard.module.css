@@ -1,0 +1,51 @@
+.cardGrid {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cardItem {
+    position: relative;
+    transform: rotate(0deg);
+    border-radius: 20px;
+}
+
+.cardItem:hover {
+    background: linear-gradient(0deg, #D9D9D9 0%, rgba(217, 217, 217, 0) 100%);
+    box-shadow: 0px 5px 34px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    transform: rotate(5deg);
+    transition: transform 1s ease;
+}
+
+.cardItem:hover .cardImg {
+    background: linear-gradient(0deg, #D9D9D9 0%, rgba(217, 217, 217, 0) 100%);
+}
+
+
+.cardImg {
+    height: 100%;
+    border-radius: 20px;
+}
+
+.cardText {
+    position: absolute;
+    font-family: 'Kristi';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 31px;
+    line-height: 39px;
+    letter-spacing: 0.02em;
+    color: transparent;
+    top: -20px;
+    left: 110px;
+    transform: translate(0, -60px);
+    transition: transform 1s ease, color 1s ease;
+}
+
+.cardItem:hover .cardText {
+    color: #FAFAFA;
+    transform: translate(0, 0);
+}
+
+
