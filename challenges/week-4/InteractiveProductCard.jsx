@@ -4,7 +4,7 @@ import css from "./InteractiveProductCard.module.css";
 export const InteractiveProductCard = () => {
   const images = [
     {
-      src: '.public/img/Rectangle4.png',
+      src: './public/img/Rectangle4.png',
       text: 'Small plant'
     },
     {
@@ -12,19 +12,19 @@ export const InteractiveProductCard = () => {
       text: 'Long plant'
     },
     {
-      src: './challenges/week-4/img/Rectangle3.png',
+      src: './public/img/Rectangle3.png',
       text: 'Stylish plant'
     },
     {
-      src: './challenges/week-4/img/Rectangle4.png',
+      src: './public/img//img/Rectangle4.png',
       text: 'Glass plant'
     },
     {
-      src: './challenges/week-4/img/Rectangle5.png',
+      src: './public/img/Rectangle5.png',
       text: 'Standard plant'
     },
     {
-      src: './challenges/week-4/img/Rectangle6.png',
+      src: './public/img/Rectangle6.png',
       text: 'Cosy plant'
     }
   ];
