@@ -4,11 +4,11 @@ import css from "./InteractiveProductCard.module.css";
 export const InteractiveProductCard = () => {
   const images = [
     {
-      src: './challenges/week-4/img/Rectangle1.png',
+      src: 'img/Rectangle1.png',
       text: 'Small plant'
     },
     {
-      src: './challenges/week-4/img/Rectangle2.png',
+      src: '/challenges/week-4/img/Rectangle2.png',
       text: 'Long plant'
     },
     {
