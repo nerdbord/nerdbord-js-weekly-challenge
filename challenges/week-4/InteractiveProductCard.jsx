@@ -6,7 +6,7 @@ export const InteractiveProductCard = () => {
     {
       src: '.public/img/Rectangle4.png',
       text: 'Small plant'
-    },s
+    },
     {
       src: './public/img/Rectangle2.png',
       text: 'Long plant'
