@@ -11,12 +11,16 @@ export const InteractiveProductCard = () => {
         './challenges/week-4/img/Rectangle6.png'
     ];
 
+    const imageText = [
+        'Small plant', 'Long plant', 'Stylish plant', "Glass plant", 'Standard plant', 'Cosy plant'
+    ];
+
     return (
         <>
             <div className={css.cardGrid}>
                 {imagePaths.map((imagePath, index) => (
                     <div className={css.cardItem} key={index}>
-                        <p className={css.cardText}>Small plant</p>
+                        <p className={css.cardText}>{imageText[index]}</p>
                         <img className={css.cardImg} src={imagePath} alt={`Rectangle ${index + 1}`} />
                     </div>
                 ))}
@@ -24,4 +28,3 @@ export const InteractiveProductCard = () => {
         </>
     );
 };
-
