@@ -8,7 +8,7 @@ export const InteractiveProductCard = () => {
       text: 'Small plant'
     },
     {
-      src: './challenges/week-4/img/Rectangle2.png',
+      src: './public/Rectangle2.png',
       text: 'Long plant'
     },
     {
