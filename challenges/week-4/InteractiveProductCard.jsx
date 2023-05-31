@@ -34,7 +34,7 @@ export const InteractiveProductCard = () => {
       {images.map((image, index) => (
         <div className={css.cardItem} key={index}>
           <p className={css.cardText}>{image.text}</p>
-          <img className={css.cardImg} src={process.env.PUBLIC_URL + image.src} alt={`Rectangle ${index + 1}`} />
+          <img className={css.cardImg} src={image.src} alt={`Rectangle ${index + 1}`} />
         </div>
       ))}
     </div>
