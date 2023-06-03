@@ -106,16 +106,17 @@ h2 {
 }
 
 .bouncein {
-    animation: 500ms ease-in-out 0s bounce;
+    animation: 500ms ease-in-out 0s bouncein;
 }
 
 .bounceout {
-    animation: 500ms ease-in-out 0s reverse bounce;
+    animation: 500ms ease-in-out 0s bounceout;
 }
 
-@keyframes bounce {
+@keyframes bouncein {
     0% {
         transform: scale(0.8);
+        opacity: 0;
     }
     25% {
         transform: scale(1.2);
@@ -128,5 +129,26 @@ h2 {
     }
     100% {
         transform: scale(1.0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounceout {
+    0% {
+        transform: scale(1.0);
+        opacity: 1;
+    }
+    25% {
+        transform: scale(0.6);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    75% {
+        transform: scale(0.7);
+    }
+    100% {
+        transform: scale(0.8);
+        opacity: 0;
     }
 }

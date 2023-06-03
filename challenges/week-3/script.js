@@ -15,10 +15,10 @@ function openModal() {
 function closeModal() {
     setTimeout(function() {
         modal.classList.add("hidden")
-    }, 500);
+    }, 450);
     setTimeout(function() {
         overlay.classList.add("hidden")
-    }, 500);
+    }, 300);
     modal.classList.remove("bouncein");
     setTimeout(function() {
         modal.classList.add("bounceout")
