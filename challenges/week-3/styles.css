@@ -93,3 +93,7 @@ h2 {
     background-color: #DCDEFD;
     color: #6A6EF7;
 }
+
+.hidden {
+    display: none;
+}
