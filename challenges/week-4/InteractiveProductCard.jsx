@@ -4,6 +4,7 @@ import { plants } from "./plants.mjs";
 
 export const InteractiveProductCard = () => {
 
+
   return (
     <div className={css.cardGrid}>
 
