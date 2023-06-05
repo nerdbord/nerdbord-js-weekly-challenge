@@ -1,0 +1,27 @@
+@import "./variables-mixins";
+
+.project-details {
+  width: 333px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  order: 2;
+  row-gap: 24px;
+
+  @media screen and (min-width: $small-break) {
+    order: 1;
+    padding-top: 65px;
+  }
+
+  .project-title {
+    @include font-props();
+    letter-spacing: 0.02em;
+    color: #33383d;
+  }
+
+  .project-description {
+    @include font-props(normal, 300, 16px, 27px);
+    color: #33383d;
+  }
+}
