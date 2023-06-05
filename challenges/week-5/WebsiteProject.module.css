@@ -27,33 +27,87 @@
     text-align: start;
 }
 
+.projectName {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+    color: transparent;
+    
+}
+
+.projectDate {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+    color: transparent;
+}
+
 .imgBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-image: url('./img/desktop.png');
-    min-width: 900px;
+    min-width: 926px;
     min-height: 500px; 
     background-size: cover;
     background-position: center;
+    animation: fade-in 1s ease-in-out;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .imgBox:hover {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./img/desktop.png');
+    }
+
+    .imgBox:hover .projectName {
+        color: #E8E6E2;
+        
+    }
+    
+    .imgBox:hover .projectDate {
+        color: #E8E6E2;
+    }
 }
 
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     
 .imgBox {
-    background-image: url('./img/tablet.png');
-    min-width: 900px;
-    min-height: 500px; 
+    background: url('./img/tablet.png');
+    min-width: 538px;
+    min-height: 664px; 
     background-size: cover;
     background-position: center;
 }
 
-.box {
-    display: flex;
-    flex-direction: row;
-    gap: 23px;
-}
 }
   
 @media only screen and (max-width: 767px) {
-    /* CSS rules for mobile */
+    .imgBox {
+        background: url('./img/mobile.png');
+        min-width: 340px;
+        min-height: 500px; 
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .box {
+        flex-direction: column-reverse;
+        gap: 23px;
+    }
 }
   
