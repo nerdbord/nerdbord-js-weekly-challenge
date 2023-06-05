@@ -1,7 +1,24 @@
 {
-  "name": "week-4-challenge",
-  "version": "1.0.0",
-  "description": "E-commerce product cards",
-  "author": "Nerdbord",
-  "license": "ISC"
+	"name": "week-4-challenge",
+	"version": "1.0.0",
+	"description": "E-commerce product cards",
+	"author": "Nerdbord",
+	"license": "ISC",
+	"source": "src/index.html",
+	"browserslist": "> 0.5%, last 2 versions, not dead",
+	"scripts": {
+		"start": "parcel --open",
+		"build": "parcel build"
+	},
+	"staticFiles": {
+		"staticPath": "images",
+		"watcherGlob": "**"
+	},
+	"devDependencies": {
+		"@parcel/transformer-sass": "^2.5.0",
+		"parcel": "^2.7.0",
+		"parcel-plugin-static-files-copy": "^1.2.4",
+		"postcss": "^8.4.24",
+		"tailwindcss": "^3.3.2"
+	}
 }
