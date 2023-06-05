@@ -1,0 +1,59 @@
+.box {
+    display: flex;
+    flex-direction: row;
+    gap: 23px;
+}
+
+.textTitle {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 55px;
+    letter-spacing: 0.02em;
+    color: #33383D;
+    text-align: start;
+
+}
+
+.text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.04em;
+    color: #33383D;
+    text-align: start;
+}
+
+.imgBox {
+    background-image: url('./img/desktop.png');
+    min-width: 900px;
+    min-height: 500px; 
+    background-size: cover;
+    background-position: center;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    
+.imgBox {
+    background-image: url('./img/tablet.png');
+    min-width: 900px;
+    min-height: 500px; 
+    background-size: cover;
+    background-position: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    gap: 23px;
+}
+}
+  
+@media only screen and (max-width: 767px) {
+    /* CSS rules for mobile */
+}
+  
