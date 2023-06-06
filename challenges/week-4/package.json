@@ -1,7 +1,9 @@
 {
-  "name": "vite-project",
-  "private": true,
-  "version": "0.0.0",
+  "name": "week-4-challenge",
+  "version": "1.0.0",
+  "description": "E-commerce product cards",
+  "author": "Nerdbord",
+  "license": "ISC",
   "type": "module",
   "scripts": {
     "dev": "vite",
