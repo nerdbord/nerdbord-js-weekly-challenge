@@ -1,0 +1,35 @@
+
+.wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #05077D;
+  }
+  
+  .newsBox {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-8.32deg);
+    left: -10%;
+    right: -10%;
+    background: #75FB8E;
+    overflow: hidden;
+  }
+  
+  .newsText {
+    font-family: "Impact";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 63px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #05077D;
+    white-space: nowrap;
+  }
+  
+
+  
