@@ -1,0 +1,34 @@
+$primary-color: #33383D;
+$white: #fff;
+$black: #000;
+$max-mobile: "976px";
+$min-tablet: "977px";
+$max-tablet: "1440px";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: $primary-color;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+
