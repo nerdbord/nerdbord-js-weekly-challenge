@@ -1,7 +1,16 @@
 {
-  "name": "week-5-challenge",
-  "version": "1.0.0",
-  "description": "Responsive website section",
-  "author": "Nerdbord",
-  "license": "ISC"
+	"name": "week-5-challenge",
+	"version": "1.0.0",
+	"source": "src/index.html",
+	"description": "Responsive website section",
+	"author": "Nerdbord",
+	"license": "ISC",
+	"browserslist": "> 0.5%, last 2 versions, not dead",
+	"scripts": {
+		"start": "parcel --open",
+		"build": "parcel build"
+	},
+	"devDependencies": {
+		"parcel": "^2.9.1"
+	}
 }
