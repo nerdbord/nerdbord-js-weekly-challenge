@@ -28,6 +28,25 @@ module.exports = {
         html: true,
       },
     ],
-    "react-hooks/exhaustive-deps": "error",
-  },
-};
+    "overrides": [
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "autofix",
+        "react",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "autofix/no-debugger": "error",
+        "arrow-body-style": ["error", "as-needed"],
+        "react/self-closing-comp": ["error", {
+            "component": true,
+            "html": true
+          }],
+          "react-hooks/exhaustive-deps": "error"
+    }
+}
