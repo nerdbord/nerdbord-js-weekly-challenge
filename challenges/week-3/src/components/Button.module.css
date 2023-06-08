@@ -1,0 +1,22 @@
+.btn {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px 30px;
+  background-color: #6a6ef7;
+  color: #dcdefd;
+  border-radius: 40px;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: color 0.25s, background-color 0.25s;
+}
+.btn:hover,
+.btn:focus {
+  color: #6a6ef7;
+  background-color: #dcdefd;
+}
