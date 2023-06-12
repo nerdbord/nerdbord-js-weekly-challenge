@@ -1,19 +1,9 @@
-const img = document.querySelector(".img");
-const container = document.createElement("div");
-const title = document.createElement("h2");
-const desc = document.createElement("p");
+const icon = document.querySelector(".nav-icon");
+const bar1 = document.querySelector(".bar1");
+const bar2 = document.querySelector(".bar2");
+const bar3 = document.querySelector(".bar3");
+const bars = document.querySelectorAll(".nav-icon div");
 
-img.addEventListener("mouseenter", () => {
-    container.classList.add("container-hover");
-    title.classList.add("title-hover");
-    desc.classList.add("desc-hover");
-    title.innerText = "Project name";
-    desc.innerHTML = "10 / 02 / 2023";
-    img.appendChild(container);
-    container.appendChild(title);
-    container.appendChild(desc);
-})
-
-img.addEventListener("mouseleave", () => {
-    img.removeChild(container);
+icon.addEventListener("click", () => {
+    icon.classList.toggle("icon-active");
 })
