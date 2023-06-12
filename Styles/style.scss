@@ -12,6 +12,7 @@ nav,
 nav {
   display: flex;
   justify-content: flex-end;
+  position: relative;
   padding: 50px;
 }
 
@@ -27,7 +28,7 @@ nav {
 .nav-icon div {
   background-color: $white;
   height: 3px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.6s ease-in-out;
   &:nth-child(1) {
     width: 100px;
   }
@@ -52,4 +53,17 @@ nav {
     transform-origin: top right;
     transform: rotate(-45deg) translate(15px,-62px)
   }
+}
+
+.nav-img {
+  position: absolute;
+  top: 0;
+  left: -1000px;
+  width: 710px;
+  height: 700px;
+  transition: all 0.6s ease-in-out;
+}
+
+.nav-img-active {
+  left: 0;
 }
