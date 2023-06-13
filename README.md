@@ -45,3 +45,4 @@ We welcome contributions to the Nerdbord JS Weekly Challenges! If you have a cha
 ## Contact us
 
 If you have any questions or feedback, please feel free to reach out to us at [Nerdbord](https://nerdbord.com) or [our Discord](https://discord.gg/Ga5veqxM8R).
+ala lsdas da bs
