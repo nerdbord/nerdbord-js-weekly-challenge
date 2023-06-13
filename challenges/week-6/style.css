@@ -3,11 +3,9 @@
 	margin: 0;
 	box-sizing: border-box;
 }
-
 html {
 	font-size: 62.5%;
 }
-
 body {
 	display: flex;
 	justify-content: center;
@@ -15,7 +13,6 @@ body {
 	height: 100vh;
 	background-color: #333;
 }
-
 .app {
 	position: relative;
 	width: clamp(400px, 80%, 1400px);
@@ -30,21 +27,19 @@ body {
 	cursor: pointer;
 }
 .linecss {
-	transition: transform 0.6s;
+	transition: transform 0.6s ease-in-out;
+	border: 2px solid #ffffff;
 }
 .line1 {
 	width: 92px;
-	border: 2px solid #ffffff;
 }
 .line2 {
 	margin: 20px 0 0 30px;
 	width: 62px;
-	border: 2px solid #ffffff;
 }
 .line3 {
 	width: 92px;
 	margin-top: 20px;
-	border: 2px solid #ffffff;
 }
 .nav {
 	position: relative;
