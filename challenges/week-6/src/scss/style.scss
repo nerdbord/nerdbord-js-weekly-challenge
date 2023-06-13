@@ -1,0 +1,98 @@
+*,
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.app-menu,
+.middle,
+.top,
+.bottom,
+.menu-button {
+  transition-duration: 600ms;
+  transition-timing-function: ease-in-out;
+}
+
+.app {
+  background-color: black;
+  position: relative;
+  max-width: 1440px;
+  min-width: 860px;
+  width: 100%;
+  height: 700px;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+.bar {
+  display: block;
+  position: absolute;
+  border-radius: 2px;
+  right: 0;
+  background-color: white;
+  height: 3px;
+  width: 98px;
+
+  &.top {
+    //transform-origin: 0 0;
+    top: 0px;
+  }
+
+  &.middle {
+    top: 24px;
+    width: 62px;
+  }
+
+  &.bottom {
+    top: 47px;
+  }
+}
+
+.app-menu {
+  height: 700px;
+  width: 710px;
+  position: absolute;
+  top: 0;
+  left: -710px;
+
+  img {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.menu-button {
+  position: absolute;
+  top: 50;
+  right: 50;
+  width: 100px;
+  height: 50px;
+  background-color: transparent;
+}
+
+*[data-state="show"] {
+  &.app-menu {
+    left: 0;
+  }
+
+  &.menu-button {
+    width: 50px;
+  }
+
+  .top {
+    transform: translateY(23px) translateX(8px) rotate(45deg);
+    width: 68px;
+  }
+
+  .bottom {
+    transform: translateY(-23px) translateX(8px) rotate(-45deg);
+    width: 68px;
+  }
+
+  .middle {
+    background-color: transparent;
+  }
+}
