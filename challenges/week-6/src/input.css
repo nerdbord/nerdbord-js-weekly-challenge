@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.line {
+		transition-property: all;
+		transition-timing-function: ease-in-out;
+		transition-duration: 600ms;
+	}
+	.activeTop {
+		transform: translateY(25px) translateX(10px) rotate(47deg);
+	}
+	.activeMiddle {
+		opacity: 0;
+	}
+	.activeBottom {
+		transform: translateY(-25px) translateX(10px) rotate(-47deg);
+	}
+	.activeImg {
+		transform: translateX(700px);
+	}
+}
