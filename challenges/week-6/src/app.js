@@ -2,6 +2,7 @@ const btnShow = document.querySelector(".btnShow");
 const topNav = document.querySelector(".topNav");
 const middleNav = document.querySelector(".middleNav");
 const bottomNav = document.querySelector(".bottomNav");
+const hiImg = document.querySelector(".hiImg");
 
 function check() {
 	const classMap = [
@@ -11,10 +12,13 @@ function check() {
 	];
 
 	for (const { navElement, activeClass } of classMap) {
-		navElement.classList.toggle(
-			activeClass,
-			!navElement.classList.contains(activeClass)
-		);
+		if (navElement.classList.contains(activeClass)) {
+			navElement.classList.remove(activeClass);
+			hiImg.classList.remove("activeImg");
+		} else {
+			navElement.classList.add(activeClass);
+			hiImg.classList.add("activeImg");
+		}
 	}
 }
 

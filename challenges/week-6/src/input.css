@@ -17,4 +17,7 @@
 	.activeBottom {
 		transform: translateY(-25px) translateX(10px) rotate(-47deg);
 	}
+	.activeImg {
+		transform: translateX(700px);
+	}
 }
