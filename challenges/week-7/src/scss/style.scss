@@ -8,6 +8,10 @@ html {
   transition-duration: 500ms;
 }
 
+body {
+  background-color: rgb(139, 139, 139);
+}
+
 body[data-theme="light"] {
   --fill-color: black;
   --background-color: white;

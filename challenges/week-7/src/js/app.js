@@ -1,3 +1,9 @@
+if (window.matchMedia("(prefers-color-scheme: dark)")) {
+  document.querySelector("body").setAttribute("data-theme", "dark");
+} else {
+  document.querySelector("body").setAttribute("data-theme", "light");
+}
+
 const menuButton = document.querySelector("div.theme-switcher");
 
 menuButton.addEventListener("click", () => {
