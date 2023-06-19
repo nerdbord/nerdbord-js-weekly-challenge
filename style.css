@@ -73,6 +73,7 @@ body {
 	left: 708px;
 	width: 16px;
 	height: 16px;
+	cursor: pointer;
 }
 .dotSmall {
 	top: 0;
