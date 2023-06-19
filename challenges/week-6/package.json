@@ -1,7 +1,23 @@
 {
+<<<<<<< HEAD
   "name": "week-6-challenge",
   "version": "1.0.0",
   "description": "Side menu",
   "author": "Nerdbord",
   "license": "ISC"
+=======
+  "name": "week-4-challenge",
+  "version": "1.0.0",
+  "description": "E-commerce product cards",
+  "author": "Nerdbord",
+  "license": "ISC",
+  "scripts": {
+    "test": "echo \"Error: no test specified\"",
+    "dev": "parcel src/index.html"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.9.1",
+    "parcel": "^2.9.1"
+  }
+>>>>>>> 099922af9e0871f5f5dac0f06b489fc0f4034945
 }
