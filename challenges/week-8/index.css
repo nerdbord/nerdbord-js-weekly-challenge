@@ -1,0 +1,83 @@
+ul {
+  list-style-type: none;
+}
+
+.hello {
+  color: #000;
+  font-size: 30px;
+  font-family: Inknut Antiqua;
+  line-height: 37px;
+  margin: 40px 0 0 40px;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  padding: 0 400px;
+  color: #000;
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.question__faq {
+  font-size: 36px;
+}
+
+.question__description {
+  font-size: 14px;
+  line-height: 22px;
+  width: 30rem;
+  position: absolute;
+  animation-name: opacity;
+  transition: 0.5s ease-in-out;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+.question__border {
+  position: relative;
+  border-bottom: 1px solid #000;
+  cursor: pointer;
+}
+
+.question__border-first {
+  position: relative;
+  border-bottom: 1px solid #000;
+  transition: 0.5s ease-in-out;
+  animation-name: myBorder;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes myBorder {
+  from {
+    margin-top: 0;
+  }
+  to {
+    margin-top: 100px;
+  }
+}
+
+.question__arrow {
+  position: absolute;
+  right: 0;
+}
+
+.question__arrow-first {
+  position: absolute;
+  right: 0;
+  transform: rotate(90deg);
+  transition: 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
