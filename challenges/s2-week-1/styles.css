@@ -1,0 +1,104 @@
+:root {
+  --black: #000;
+  --pink: #eb5453;
+  --posit: absolute;
+}
+
+body {
+  background-color: var(--black);
+  margin-top: 100px;
+}
+
+.text {
+  position: var(--posit);
+  display: flex;
+  margin-left: 400px;
+  align-items: center;
+  color: var(--pink);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 59px;
+}
+
+.clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock__one {
+  position: relative;
+  width: 480px;
+  height: 480px;
+  border: var(--pink) 1px solid;
+  border-radius: 50%;
+}
+
+.clock__second {
+  position: var(--posit);
+  width: 450px;
+  height: 450px;
+  border: var(--pink) 1px solid;
+  border-radius: 50%;
+}
+
+.clock__third {
+  position: var(--posit);
+  width: 390px;
+  height: 390px;
+  border-radius: 50%;
+  animation: time 60s linear infinite;
+}
+
+.clock__third-inner {
+  position: var(--posit);
+  width: 250px;
+  height: 250px;
+  border: var(--pink) 1px solid;
+  border-radius: 50%;
+  animation: time 60s linear infinite;
+}
+
+.clock__third-dot {
+  width: 15px;
+  height: 15px;
+  margin-top: 75px;
+  border-radius: 50%;
+  background-color: var(--pink);
+}
+
+.clock__center {
+  position: var(--posit);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--pink);
+}
+
+.clock__minutes {
+  margin-top: 10px;
+  margin-left: 5px;
+  position: var(--posit);
+  transform-origin: top center;
+  width: 4px;
+  height: 186px;
+  border: var(--pink) 1px solid;
+  animation: time 3600s linear infinite;
+}
+
+.clock__hours {
+  margin-top: 10px;
+  margin-left: 5px;
+  position: var(--posit);
+  transform-origin: top center;
+  width: 4px;
+  height: 108px;
+  border: var(--pink) 1px solid;
+  animation: time 43200s linear infinite;
+}
+
+@keyframes time {
+  to {
+    transform: rotateZ(360deg);
+  }
+}
