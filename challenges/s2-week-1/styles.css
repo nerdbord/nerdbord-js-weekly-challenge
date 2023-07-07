@@ -3,7 +3,6 @@
   --pink: #eb5453;
   --posit: absolute;
 }
-
 body {
   background-color: var(--black);
   margin-top: 100px;
