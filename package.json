@@ -1,11 +1,7 @@
 {
-  "name": "nerdbord-js-weekly-challenge",
+  "name": "s2-week-1-challenge",
   "version": "1.0.0",
-  "description": "Nerdbord JS weekly challenges are structured as monorepo. Each challenge is a separate package, so you are free to choose which one you want to solve.",
+  "description": "Building a clock",
   "author": "Nerdbord",
-  "license": "ISC",
-  "private": true,
-  "workspaces": [
-    "challenges/*"
-  ]
+  "license": "ISC"
 }
