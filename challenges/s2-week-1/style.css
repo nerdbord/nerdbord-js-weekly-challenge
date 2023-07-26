@@ -1,0 +1,104 @@
+:root {
+	--first: #000;
+	--second: #eb5453;
+	--position: absolute;
+}
+
+body {
+	background-color: var(--first);
+	margin-top: 100px;
+}
+
+.text {
+	position: var(--position);
+	display: flex;
+	margin-left: 480px;
+	align-items: center;
+	color: var(--second);
+	font-size: 36px;
+	font-weight: 400;
+	line-height: 59px;
+}
+
+.clock {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.clock__first {
+	position: relative;
+	width: 480px;
+	height: 480px;
+	border: 1px solid var(--second);
+	border-radius: 50%;
+}
+
+.clock__second {
+	position: var(--position);
+	width: 450px;
+	height: 450px;
+    border: 1px solid var(--second);
+	border-radius: 50%;
+}
+
+.clock__third {
+	position: var(--position);
+	width: 390px;
+	height: 390px;
+	border-radius: 50%;
+	animation: time 60s linear infinite;
+}
+
+.clock__third-inner {
+	position: var(-position);
+	width: 240px;
+	height: 240px;
+	border: 1px solid var(--second);
+	border-radius: 50%;
+	animation: time 60s linear infinite;
+}
+
+.clock__third-dot {
+	width: 15px;
+	height: 15px;
+	margin-top: 75px;
+	border-radius: 50%;
+	background-color: var(--second);
+}
+
+.clock__center {
+	position: var(--position);
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: var(--second);
+}
+
+.clock__minutes{
+    position: var(--position);
+    width: 4px;
+    height: 186px;
+    margin-top: 10px;
+    margin-left: 5px;
+    transform-origin: top center;
+    border: 1px solid var(--second);
+    animation: time 3600s linear infinite;
+}
+
+.clock__hours{
+    position: var(--position);
+    width: 4px;
+    height: 108px;
+    margin-top: 10px;
+    margin-left: 5px;
+    transform-origin: top center;
+    border: 1px solid var(--second);
+    animation: time 43200s linear infinite;
+}
+
+@keyframes time{
+    to{
+    transform: rotateZ(360deg);
+    }
+}
