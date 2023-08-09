@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.title-navigation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    width: 779px;
+    height: 122px;
+}
+
+sup{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.title-navigation p{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 3px;
+    color: #C6C6C6;
+    transition: .5s ease-in-out;
+}
+
+p:hover {
+    color: black;
+    cursor: pointer;
+}
+
+img{
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: visible .3s, opacity .5s linear;
+}
+
+.picture01{
+    top: 10%;
+    left: 45%;
+}
+
+.picture02{
+    top: 25%;
+    right: 15%;
+}
+.picture03{
+    top: 5%;
+    left: 30%;
+}
+
+.picture04{
+    top: 40%;
+    right: 35%;
+}
+
+.picture05{
+    top: 15%;
+    right: 15%;
+}
+
+.picture06{
+    bottom: 5%;
+    right: 50%;
+}
+
+
+.interior:hover .picture01{
+    visibility: visible;
+    opacity: 1;
+}
+.identity:hover .picture02{
+    visibility: visible;
+    opacity: 1;
+}
+.visual:hover .picture03{
+    visibility: visible;
+    opacity: 1;
+}
+.animation:hover .picture04{
+    visibility: visible;
+    opacity: 1;
+}
+.bunch:hover .picture05{
+    visibility: visible;
+    opacity: 1;
+}
+.rumors:hover .picture06{
+    visibility: visible;
+    opacity: 1;
+}
