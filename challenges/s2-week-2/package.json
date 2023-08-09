@@ -1,0 +1,14 @@
+{
+  "name": "s2-week-2-challenge",
+  "version": "1.0.0",
+  "description": "Build section with hover effects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mateusz Wróbel",
+  "license": "ISC",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
